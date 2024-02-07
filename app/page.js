@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Header from './components/Header'
+import ChatBar from './components/ChatBar'
 
 export default function Home () {
   return (
@@ -17,6 +18,7 @@ export default function Home () {
           </figure>
           <span className='text-2xl font-semibold'>How can I help you today?</span>
         </div>
+        <ChatBar />
       </main>
     </>
   )
