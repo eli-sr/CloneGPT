@@ -1,11 +1,14 @@
-import Image from 'next/image'
 import Header from './components/Header'
 
 export default function Home () {
   return (
-    <main>
-      <Header/>
-      <h1>Hello!</h1>
-    </main>
+    <>
+      <Header />
+      <main>
+        <div>
+          <h1 className='text-xl font-semibold'>How can I help you today?</h1>
+        </div>
+      </main>
+    </>
   )
 }
