@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-clone",
+  "name": "clonegpt",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "eslintConfig": {
-    "extends": ["standard", "standard-jsx"]
+    "extends": [
+      "standard",
+      "standard-jsx"
+    ]
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
+    "framer-motion": "^11.0.3",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"
