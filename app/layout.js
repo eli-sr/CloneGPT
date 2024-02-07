@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Aside from './components/Aside.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout ({ children }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} flex flex-col w-full h-screen`}>{children}</body>
+      <body className={`${inter.className} flex w-full h-screen`}>
+        <Aside />
+        {children}
+      </body>
     </html>
   )
 }

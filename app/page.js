@@ -4,7 +4,7 @@ import ChatBar from './components/ChatBar'
 
 export default function Home () {
   return (
-    <>
+    <div className='flex flex-col grow'>
       <Header />
       <main className='flex flex-col w-full h-full'>
         <div className='flex flex-col items-center justify-center grow'>
@@ -20,6 +20,6 @@ export default function Home () {
         </div>
         <ChatBar />
       </main>
-    </>
+    </div>
   )
 }
