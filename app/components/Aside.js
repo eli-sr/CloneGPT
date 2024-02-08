@@ -95,11 +95,36 @@ function ChatList () {
   )
 }
 
+function User () {
+  return (
+    <div className='p-3'>
+      <Button
+        fullWidth
+        variant='light'
+        className='justify-start px-2 text-white rounded-lg'
+      >
+        <figure className='p-1 bg-white rounded-full'>
+          <Image
+            src='https://www.svgrepo.com/show/306500/openai.svg'
+            width={20}
+            height={20}
+            alt='OpenAI logo'
+          />
+        </figure>
+        <span className='text-left'>User</span>
+      </Button>
+    </div>
+  )
+}
+
 export default function Aside () {
   return (
-    <aside className='bg-black min-w-[260px] w-[260px] p-3 overflow-scroll relative'>
-      <NewChatButton />
-      <ChatList />
+    <aside className='bg-black min-w-[260px] w-[260px] h-full flex flex-col'>
+      <div className='p-3 overflow-y-auto grow'>
+        <NewChatButton />
+        <ChatList />
+      </div>
+      <User />
     </aside>
   )
 }
