@@ -9,7 +9,7 @@ import { PencilSquareIcon } from '@heroicons/react/16/solid'
 
 function NewChatButton () {
   return (
-    <div className='sticky top-0 z-10 mb-7'>
+    <div className='sticky top-0 z-10 bg-black rounded-lg mb-7'>
       <Button
         fullWidth
         variant='light'
