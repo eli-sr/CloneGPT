@@ -3,6 +3,7 @@ import './globals.css'
 import Aside from './components/Aside.js'
 import Header from './components/Header'
 import ChatBar from './components/ChatBar'
+import FAQButton from './components/FAQButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,9 @@ export default function RootLayout ({ children }) {
             <div className='flex flex-col w-full h-full lg:max-w-2xl xl:max-w-3xl'>
               {children}
               <ChatBar />
+            </div>
+            <div className='fixed bottom-2 right-2'>
+              <FAQButton />
             </div>
           </main>
         </div>
