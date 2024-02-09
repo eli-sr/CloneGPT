@@ -5,6 +5,7 @@ import Image from 'next/image'
 import chats from '../mocks/chats.json'
 import { getPreviousTime } from '../util/functions'
 import { useEffect, useState } from 'react'
+import { PencilSquareIcon } from '@heroicons/react/16/solid'
 
 function NewChatButton () {
   return (
@@ -23,7 +24,7 @@ function NewChatButton () {
           />
         </figure>
         <span className='text-left grow'>New chat</span>
-        ico
+        <PencilSquareIcon className='w-5 h-5' />
       </Button>
     </div>
   )
